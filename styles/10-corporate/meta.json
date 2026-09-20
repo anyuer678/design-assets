@@ -1,0 +1,23 @@
+{
+  "id": "10-corporate",
+  "name_en": "corporate",
+  "name_zh": "商务科技",
+  "source": {
+    "hero": "../../design-assets/hero/10-corporate-hero.jpg",
+    "background": "../../design-assets/background/10-corporate-bg.jpg",
+    "widgets": "../../design-assets/widgets/10-corporate-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\10-corporate-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\10-corporate-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "11-terminal",
+  "name_en": "terminal",
+  "name_zh": "终端黑客",
+  "source": {
+    "hero": "../../design-assets/hero/11-terminal-hero.jpg",
+    "background": "../../design-assets/background/11-terminal-bg.jpg",
+    "widgets": "../../design-assets/widgets/11-terminal-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\11-terminal-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\11-terminal-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

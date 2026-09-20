@@ -1,0 +1,23 @@
+{
+  "id": "17-acid",
+  "name_en": "acid",
+  "name_zh": "酸性设计",
+  "source": {
+    "hero": "../../design-assets/hero/17-acid-hero.jpg",
+    "background": "../../design-assets/background/17-acid-bg.jpg",
+    "widgets": "../../design-assets/widgets/17-acid-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\17-acid-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\17-acid-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

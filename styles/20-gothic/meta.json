@@ -1,0 +1,23 @@
+{
+  "id": "20-gothic",
+  "name_en": "gothic",
+  "name_zh": "暗黑哥特",
+  "source": {
+    "hero": "../../design-assets/hero/20-gothic-hero.jpg",
+    "background": "../../design-assets/background/20-gothic-bg.jpg",
+    "widgets": "../../design-assets/widgets/20-gothic-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\20-gothic-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\20-gothic-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

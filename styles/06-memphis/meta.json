@@ -1,0 +1,23 @@
+{
+  "id": "06-memphis",
+  "name_en": "memphis",
+  "name_zh": "孟菲斯",
+  "source": {
+    "hero": "../../design-assets/hero/06-memphis-hero.jpg",
+    "background": "../../design-assets/background/06-memphis-bg.jpg",
+    "widgets": "../../design-assets/widgets/06-memphis-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\06-memphis-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\06-memphis-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

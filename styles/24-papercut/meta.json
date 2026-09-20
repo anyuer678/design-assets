@@ -1,0 +1,23 @@
+{
+  "id": "24-papercut",
+  "name_en": "papercut",
+  "name_zh": "剪纸拼贴",
+  "source": {
+    "hero": "../../design-assets/hero/24-papercut-hero.jpg",
+    "background": "../../design-assets/background/24-papercut-bg.jpg",
+    "widgets": "../../design-assets/widgets/24-papercut-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\24-papercut-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\24-papercut-bg.jpg",
+    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\24-papercut-widgets.jpg"
+  },
+  "complete": true
+}

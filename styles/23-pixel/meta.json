@@ -1,0 +1,23 @@
+{
+  "id": "23-pixel",
+  "name_en": "pixel",
+  "name_zh": "像素艺术",
+  "source": {
+    "hero": "../../design-assets/hero/23-pixel-hero.jpg",
+    "background": "../../design-assets/background/23-pixel-bg.jpg",
+    "widgets": "../../design-assets/widgets/23-pixel-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\23-pixel-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\23-pixel-bg.jpg",
+    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\23-pixel-widgets.jpg"
+  },
+  "complete": true
+}

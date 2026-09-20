@@ -1,0 +1,23 @@
+{
+  "id": "08-ink",
+  "name_en": "ink",
+  "name_zh": "中国水墨",
+  "source": {
+    "hero": "../../design-assets/hero/08-ink-hero.jpg",
+    "background": "../../design-assets/background/08-ink-bg.jpg",
+    "widgets": "../../design-assets/widgets/08-ink-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\08-ink-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\08-ink-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

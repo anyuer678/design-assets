@@ -1,0 +1,23 @@
+{
+  "id": "01-minimalism",
+  "name_en": "minimalism",
+  "name_zh": "极简主义",
+  "source": {
+    "hero": "../../design-assets/hero/01-minimalism-hero.jpg",
+    "background": "../../design-assets/background/01-minimalism-bg.jpg",
+    "widgets": "../../design-assets/widgets/01-minimalism-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\01-minimalism-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\01-minimalism-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

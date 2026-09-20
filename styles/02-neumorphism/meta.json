@@ -1,0 +1,23 @@
+{
+  "id": "02-neumorphism",
+  "name_en": "neumorphism",
+  "name_zh": "新拟态",
+  "source": {
+    "hero": "../../design-assets/hero/02-neumorphism-hero.jpg",
+    "background": "../../design-assets/background/02-neumorphism-bg.jpg",
+    "widgets": "../../design-assets/widgets/02-neumorphism-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\02-neumorphism-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\02-neumorphism-bg.jpg",
+    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\02-neumorphism-widgets.jpg"
+  },
+  "complete": true
+}

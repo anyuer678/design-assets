@@ -1,0 +1,23 @@
+{
+  "id": "21-natural",
+  "name_en": "natural",
+  "name_zh": "自然有机",
+  "source": {
+    "hero": "../../design-assets/hero/21-natural-hero.jpg",
+    "background": "../../design-assets/background/21-natural-bg.jpg",
+    "widgets": "../../design-assets/widgets/21-natural-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\21-natural-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\21-natural-bg.jpg",
+    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\21-natural-widgets.jpg"
+  },
+  "complete": true
+}

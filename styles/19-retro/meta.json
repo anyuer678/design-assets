@@ -1,0 +1,23 @@
+{
+  "id": "19-retro",
+  "name_en": "retro",
+  "name_zh": "复古怀旧",
+  "source": {
+    "hero": "../../design-assets/hero/19-retro-hero.jpg",
+    "background": "../../design-assets/background/19-retro-bg.jpg",
+    "widgets": "../../design-assets/widgets/19-retro-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\19-retro-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\19-retro-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

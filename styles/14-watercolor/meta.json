@@ -1,0 +1,23 @@
+{
+  "id": "14-watercolor",
+  "name_en": "watercolor",
+  "name_zh": "手绘水彩",
+  "source": {
+    "hero": "../../design-assets/hero/14-watercolor-hero.jpg",
+    "background": "../../design-assets/background/14-watercolor-bg.jpg",
+    "widgets": "../../design-assets/widgets/14-watercolor-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\14-watercolor-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\14-watercolor-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

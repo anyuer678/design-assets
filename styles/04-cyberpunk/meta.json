@@ -1,0 +1,23 @@
+{
+  "id": "04-cyberpunk",
+  "name_en": "cyberpunk",
+  "name_zh": "赛博朋克",
+  "source": {
+    "hero": "../../design-assets/hero/04-cyberpunk-hero.jpg",
+    "background": "../../design-assets/background/04-cyberpunk-bg.jpg",
+    "widgets": "../../design-assets/widgets/04-cyberpunk-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\04-cyberpunk-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\04-cyberpunk-bg.jpg",
+    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\04-cyberpunk-widgets.jpg"
+  },
+  "complete": true
+}

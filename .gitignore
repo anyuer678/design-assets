@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+# 禁止把超大高清素材直接推入 Git
+*.upscayl*.png
+最新素材库清晰版/

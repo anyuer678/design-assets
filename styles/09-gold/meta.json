@@ -1,0 +1,23 @@
+{
+  "id": "09-gold",
+  "name_en": "gold",
+  "name_zh": "鎏金东方",
+  "source": {
+    "hero": "../../design-assets/hero/09-gold-hero.jpg",
+    "background": "../../design-assets/background/09-gold-bg.jpg",
+    "widgets": "../../design-assets/widgets/09-gold-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\09-gold-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\09-gold-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

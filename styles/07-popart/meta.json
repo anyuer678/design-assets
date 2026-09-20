@@ -1,0 +1,23 @@
+{
+  "id": "07-popart",
+  "name_en": "popart",
+  "name_zh": "波普艺术",
+  "source": {
+    "hero": "../../design-assets/hero/07-popart-hero.jpg",
+    "background": "../../design-assets/background/07-popart-bg.jpg",
+    "widgets": "../../design-assets/widgets/07-popart-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\07-popart-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\07-popart-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}

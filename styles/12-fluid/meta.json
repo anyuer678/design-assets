@@ -1,0 +1,23 @@
+{
+  "id": "12-fluid",
+  "name_en": "fluid",
+  "name_zh": "流体渐变",
+  "source": {
+    "hero": "../../design-assets/hero/12-fluid-hero.jpg",
+    "background": "../../design-assets/background/12-fluid-bg.jpg",
+    "widgets": "../../design-assets/widgets/12-fluid-widgets.jpg"
+  },
+  "usage": [
+    "docs",
+    "ppt",
+    "portfolio",
+    "preview"
+  ],
+  "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
+  "files": {
+    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\12-fluid-hero.jpg",
+    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\12-fluid-bg.jpg",
+    "widgets": null
+  },
+  "complete": false
+}
