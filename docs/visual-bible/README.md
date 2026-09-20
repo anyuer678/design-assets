@@ -1,14 +1,15 @@
-# 产品视觉圣经（摘要）
+# 产品视觉圣经（全文 Markdown）
 
-完整原文见本地：
-`C:\Users\30816\Desktop\design-assets\最新素材库清晰版\开发tu典\`
+来源：本地 `design-assets/最新素材库清晰版/开发tu典/*.docx`（仅转换，不改产品实现）。
 
-| 产品 | 世界观 | 主色 | 禁止 |
-|------|--------|------|------|
-| chatez | 暖色书房 AI | 米白/浅棕/暖灰 | 赛博霓虹、高饱和科技蓝 |
-| todo-list | 人生控制台 | 深灰+橙 | 便签拟物过重 |
-| codedrill | 代码训练营 | 黑底绿荧光 | 与终端叙事冲突的花哨主题 |
-| Word 图书馆版 | 古典图书馆 | 深棕/羊皮纸/古铜 | 塑料感教育 App 风 |
-| Word 墨水屏版 | 静墨书卷 | 黑白灰 | 复杂渐变、大面积灰阶 |
+| 文档 | 说明 |
+|------|------|
+| [personal-visual-bible-v1.md](personal-visual-bible-v1.md) | 个人项目视觉圣经 v1.0（chatez / todo-list / codedrill / Word 双版） |
+| [visual-design-guide.md](visual-design-guide.md) | 视觉设计指导书（AI 生成 UI 提示词与页面结构） |
+| [word-library-product-spec-v1.md](word-library-product-spec-v1.md) | Word 图书馆版产品设计规范书 |
 
-公开发布前：将 docx 原文导出为本目录下 Markdown。
+## 纪律
+
+- 产品 UI **禁止**被 design-assets 素材换皮
+- 文档/PPT/案例可引用 `samples/` 与风格索引
+- 详见仓库根目录 [USAGE.md](../../USAGE.md)
