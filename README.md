@@ -4,7 +4,7 @@
 > **大图资产**不在本仓 Git 对象库中，请使用 Release 附件或本地源目录。
 
 [![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey)](LICENSE)
-[![status](https://img.shields.io/badge/status-skeleton-blue)](#)
+[![status](https://img.shields.io/badge/status-preview-green)](#)
 
 ## 内容
 
@@ -41,9 +41,9 @@ python scripts/build_meta.py
 ## 未来
 
 - [ ] 视觉圣经 docx → Markdown 全文
-- [ ] GitHub Pages 预览站（按风格筛选）
+- [x] GitHub Pages 预览站（按风格筛选）docs/index.html + docs/preview.js
 - [ ] Release 上传压缩全集（2048×1152）
-- [ ] CONTRIBUTING：新增风格的提示词与命名规范
+- [x] CONTRIBUTING：新增风格的提示词与命名规范（基础版已含画风纪律）
 
 ## License
 

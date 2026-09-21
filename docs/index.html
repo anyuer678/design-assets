@@ -1,170 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>design-assets · 24 风格索引</title>
+  <title>design-assets · 24 风格预览骨架</title>
   <style>
-    body { font-family: -apple-system,'PingFang SC','Microsoft YaHei',sans-serif; margin:0; background:#f7f5f0; color:#2c2a26; }
-    header { padding:24px 32px; background:#fff; border-bottom:1px solid #e5e0d8; }
-    main { padding:24px 32px; display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
+    :root { --ink:#2a2824; --muted:#6b6560; --line:#ddd5c8; --bg:#f6f3ec; --card:#fffdf8; --accent:#8a7348; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    .wrap { width:min(1100px, calc(100% - 28px)); margin:0 auto; padding:28px 0 48px; }
+    h1 { margin:0 0 8px; font-size:26px; }
+    .lead { color:var(--muted); margin:0 0 18px; max-width:70ch; }
+    .warn { background:#f5ecd8; border:1px solid #c4a86a; color:#5a4a20; padding:10px 12px; border-radius:10px; margin:12px 0 18px; font-size:14px; }
+    .controls { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:6px 12px; cursor:pointer; font-size:13px; }
+    .chip.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    .card img { width:100%; height:140px; object-fit:cover; background:#e8e2d6; display:block; }
+    .card .body { padding:10px 12px; }
+    .card h3 { margin:0 0 4px; font-size:14px; }
+    .card p { margin:0; font-size:12px; color:var(--muted); min-height:3em; }
+    .meta { font-size:11px; color:var(--accent); }
+    footer { margin-top:28px; font-size:12px; color:var(--muted); }
+    a { color:#3d5a80; }
   </style>
 </head>
 <body>
-  <header>
-    <h1 style="margin:0;font-size:20px">design-assets · 24 风格索引</h1>
-    <p style="margin:8px 0 0;color:#666;font-size:13px">
-      仅用于文档/PPT/案例；<strong>禁止</strong>替换产品 UI 主题。
-      <a href="../USAGE.md">USAGE.md</a> · <a href="https://github.com/anyuer678/design-assets">GitHub</a>
+  <div class="wrap">
+    <h1>design-assets · 风格预览骨架</h1>
+    <p class="lead">
+      公开仓提供 <strong>24 风格元数据 + 使用纪律 + 视觉圣经摘要</strong>。
+      大图全集不在 Git 对象库中，请使用 Release 附件或本机
+      <code>C:\...\Desktop\design-assets</code> 源目录。
     </p>
-    <p style="margin:4px 0 0;color:#888;font-size:12px">samples(+widgets 6)=17；全集大图不在 Git（见 README）</p>
-  </header>
-  <main>
-    
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/01-minimalism-bg.jpg" alt="01-minimalism" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">极简主义</div>
-      <div style="color:#666;font-size:12px">01-minimalism</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
+    <div class="warn">
+      <strong>画风纪律（USAGE）：</strong>本库只服务文档 / PPT / 作品集案例，
+      <strong>禁止</strong>替换产品 UI 主题（chatez 暖色书房、codedrill 终端绿、CET 图书馆/静墨、kb-ui 自有皮肤等）。
     </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/02-neumorphism-bg.jpg" alt="02-neumorphism" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">新拟态</div>
-      <div style="color:#666;font-size:12px">02-neumorphism</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
+    <div class="controls" id="filters">
+      <button class="chip active" data-k="all">全部</button>
+      <button class="chip" data-k="doc">文档/审计</button>
+      <button class="chip" data-k="culture">文化/水墨</button>
+      <button class="chip" data-k="tech">科技/终端</button>
+      <button class="chip" data-k="playful">游戏/桌宠</button>
     </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/03-glassmorphism-bg.jpg" alt="03-glassmorphism" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">玻璃拟态</div>
-      <div style="color:#666;font-size:12px">03-glassmorphism</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">04-cyberpunk</div>
-      <div style="margin-top:8px;font-weight:600">赛博朋克</div>
-      <div style="color:#666;font-size:12px">04-cyberpunk</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">05-vaporwave</div>
-      <div style="margin-top:8px;font-weight:600">蒸汽波</div>
-      <div style="color:#666;font-size:12px">05-vaporwave</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/06-memphis-bg.jpg" alt="06-memphis" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">孟菲斯</div>
-      <div style="color:#666;font-size:12px">06-memphis</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">07-popart</div>
-      <div style="margin-top:8px;font-weight:600">波普艺术</div>
-      <div style="color:#666;font-size:12px">07-popart</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/08-ink-hero.jpg" alt="08-ink" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">中国水墨</div>
-      <div style="color:#666;font-size:12px">08-ink</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">09-gold</div>
-      <div style="margin-top:8px;font-weight:600">鎏金东方</div>
-      <div style="color:#666;font-size:12px">09-gold</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/10-corporate-hero.jpg" alt="10-corporate" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">商务科技</div>
-      <div style="color:#666;font-size:12px">10-corporate</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">11-terminal</div>
-      <div style="margin-top:8px;font-weight:600">终端黑客</div>
-      <div style="color:#666;font-size:12px">11-terminal</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/12-fluid-hero.jpg" alt="12-fluid" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">流体渐变</div>
-      <div style="color:#666;font-size:12px">12-fluid</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/13-pastel-hero.jpg" alt="13-pastel" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">粉彩马卡龙</div>
-      <div style="color:#666;font-size:12px">13-pastel</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">14-watercolor</div>
-      <div style="margin-top:8px;font-weight:600">手绘水彩</div>
-      <div style="color:#666;font-size:12px">14-watercolor</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/15-isometric-hero.jpg" alt="15-isometric" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">3D 等距</div>
-      <div style="color:#666;font-size:12px">15-isometric</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/16-flat-hero.jpg" alt="16-flat" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">扁平插画</div>
-      <div style="color:#666;font-size:12px">16-flat</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">17-acid</div>
-      <div style="margin-top:8px;font-weight:600">酸性设计</div>
-      <div style="color:#666;font-size:12px">17-acid</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/18-swiss-bg.jpg" alt="18-swiss" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">瑞士国际</div>
-      <div style="color:#666;font-size:12px">18-swiss</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <img src="../samples/19-swiss-widgets.jpg" alt="19-retro" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eee">
-      <div style="margin-top:8px;font-weight:600">复古怀旧</div>
-      <div style="color:#666;font-size:12px">19-retro</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">20-gothic</div>
-      <div style="margin-top:8px;font-weight:600">暗黑哥特</div>
-      <div style="color:#666;font-size:12px">20-gothic</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">21-natural</div>
-      <div style="margin-top:8px;font-weight:600">自然有机</div>
-      <div style="color:#666;font-size:12px">21-natural</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">22-artdeco</div>
-      <div style="margin-top:8px;font-weight:600">装饰艺术</div>
-      <div style="color:#666;font-size:12px">22-artdeco</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">23-pixel</div>
-      <div style="margin-top:8px;font-weight:600">像素艺术</div>
-      <div style="color:#666;font-size:12px">23-pixel</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-    <div style="border:1px solid #e5e5e5;border-radius:12px;padding:12px;background:#fff">
-      <div style="height:120px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:12px">24-papercut</div>
-      <div style="margin-top:8px;font-weight:600">剪纸拼贴</div>
-      <div style="color:#666;font-size:12px">24-papercut</div>
-      <div style="margin-top:6px;font-size:12px;color:#444">Do not replace product UI themes in kb-ui/chatez/codedrill etc.</div>
-    </div>
-  </main>
+    <div class="grid" id="grid"></div>
+    <footer>
+      License CC0 ·
+      <a href="./docs/visual-bible/">视觉圣经</a> ·
+      <a href="./USAGE.md">USAGE</a> ·
+      <a href="https://github.com/anyuer678/design-assets">GitHub</a>
+      · 样例图来自 <code>samples/</code>（非全集）
+    </footer>
+  </div>
+  <script src="./preview.js"></script>
 </body>
 </html>
