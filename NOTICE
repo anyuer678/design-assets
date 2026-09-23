@@ -1,10 +1,10 @@
 Design Assets — AI-generated design material library (local package)
 
-- Source directory: C:\Users\30816\Desktop\design-assets
+- Source directory: ~/Desktop/design-assets (override with the DESIGN_ASSETS_SRC env var)
 - Content: 24 style hero/background pairs + widget sheets + transparent components
 - Origin: AI-generated for personal frontend/PPT use; reference kb-ui theme system
-- License (recommended for future GitHub): CC0-1.0 OR CC-BY-4.0
+- License: CC0-1.0 (see LICENSE)
 - NOTICE: Images are AI-generated. No third-party trademark assets included by design.
-- Product visual bibles (chatez/todo/codedrill/word) live under
-  最新素材库清晰版/开发tu典/ — convert to docs/visual-bible/ before public release.
+- Product visual bibles (chatez/todo/codedrill/word) are published as Markdown
+  under docs/visual-bible/ (converted only, product implementations untouched).
 - Usage policy: documentation/PPT/case studies only; do NOT restyle product UIs.

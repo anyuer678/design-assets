@@ -15,9 +15,9 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\22-artdeco-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\22-artdeco-bg.jpg",
-    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\22-artdeco-widgets.jpg"
+    "hero": "hero/22-artdeco-hero.jpg",
+    "background": "background/22-artdeco-bg.jpg",
+    "widgets": "widgets/22-artdeco-widgets.jpg"
   },
   "complete": true
 }

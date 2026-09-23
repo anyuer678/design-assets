@@ -15,9 +15,9 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\03-glassmorphism-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\03-glassmorphism-bg.jpg",
-    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\03-glassmorphism-widgets.jpg"
+    "hero": "hero/03-glassmorphism-hero.jpg",
+    "background": "background/03-glassmorphism-bg.jpg",
+    "widgets": "widgets/03-glassmorphism-widgets.jpg"
   },
   "complete": true
 }

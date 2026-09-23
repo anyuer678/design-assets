@@ -15,8 +15,8 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\09-gold-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\09-gold-bg.jpg",
+    "hero": "hero/09-gold-hero.jpg",
+    "background": "background/09-gold-bg.jpg",
     "widgets": null
   },
   "complete": false
