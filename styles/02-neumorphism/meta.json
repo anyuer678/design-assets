@@ -15,9 +15,9 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\02-neumorphism-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\02-neumorphism-bg.jpg",
-    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\02-neumorphism-widgets.jpg"
+    "hero": "hero/02-neumorphism-hero.jpg",
+    "background": "background/02-neumorphism-bg.jpg",
+    "widgets": "widgets/02-neumorphism-widgets.jpg"
   },
   "complete": true
 }

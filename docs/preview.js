@@ -1,4 +1,5 @@
-/* design-assets Pages preview — style metadata filter (samples optional) */
+/* design-assets Pages preview — 风格元数据筛选 + 仓库内已有样例缩略图 */
+
 const STYLES = [
   { id: "01-minimalism", zh: "极简主义", en: "Minimalism", tags: ["doc"], use: "技术文档/审计报告头图" },
   { id: "02-neumorphism", zh: "新拟态", en: "Neumorphism", tags: ["doc"], use: "柔和 UI 概念示意（勿入暖色产品）" },
@@ -26,15 +27,33 @@ const STYLES = [
   { id: "24-papercut", zh: "剪纸拼贴", en: "Paper Cut", tags: ["culture"], use: "华阴老腔外宣（不改站点主视觉）" },
 ];
 
-// try local samples if present in repo
-const SAMPLE_MAP = {
-  "08-ink": "../samples/08-ink.jpg",
-  "18-swiss": "../samples/18-swiss.jpg",
-  "01-minimalism": "../samples/01-minimalism.jpg",
-  "09-gold": "../samples/09-gold.jpg",
-  "11-terminal": "../samples/11-terminal.jpg",
-  "24-papercut": "../samples/24-papercut.jpg",
+// docs/samples/ 里真实存在的样例。数字与风格编号对齐（hero 优先作缩略图）。
+const SAMPLES = {
+  "01-minimalism": ["01-minimalism-hero.jpg", "01-minimalism-bg.jpg", "01-minimalism-widgets.jpg"],
+  "02-neumorphism": ["02-neumorphism-hero.jpg", "02-neumorphism-bg.jpg", "02-neumorphism-widgets.jpg"],
+  "03-glassmorphism": ["03-glassmorphism-hero.jpg", "03-glassmorphism-bg.jpg", "03-glassmorphism-widgets.jpg"],
+  "06-memphis": ["06-memphis-hero.jpg", "06-memphis-bg.jpg", "06-memphis-widgets.jpg"],
+  "08-ink": ["08-ink-hero.jpg", "08-ink-widgets.jpg"],
+  "10-corporate": ["10-corporate-hero.jpg", "10-corporate-widgets.jpg"],
+  "12-fluid": ["12-fluid-hero.jpg"],
+  "13-pastel": ["13-pastel-hero.jpg"],
+  "15-isometric": ["15-isometric-hero.jpg"],
+  "16-flat": ["16-flat-hero.jpg"],
+  "18-swiss": ["18-swiss-hero.jpg", "18-swiss-bg.jpg", "18-swiss-widgets.jpg"],
 };
+
+const VARIANT_ZH = { hero: "主图", bg: "背景", widgets: "控件" };
+const SAMPLE_BASE = "./samples/";
+
+function placeholder(s, note) {
+  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="140">` +
+    `<rect fill="#e8e2d6" width="100%" height="100%"/>` +
+    `<text x="20" y="74" font-size="20" fill="#8a7348" font-family="sans-serif">${s.zh}</text>` +
+    `<text x="20" y="100" font-size="12" fill="#a4977d" font-family="sans-serif">${note}</text>` +
+    `</svg>`
+  );
+}
 
 function render(key) {
   const grid = document.getElementById("grid");
@@ -42,22 +61,31 @@ function render(key) {
   STYLES.filter((s) => key === "all" || s.tags.includes(key)).forEach((s) => {
     const el = document.createElement("article");
     el.className = "card";
+    const owned = SAMPLES[s.id] || [];
+
     const img = document.createElement("img");
-    img.alt = s.zh;
+    img.alt = `${s.zh} · ${s.en} 样例`;
     img.loading = "lazy";
-    const candidate = SAMPLE_MAP[s.id];
-    img.src = candidate || "data:image/svg+xml," + encodeURIComponent(
-      `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="140"><rect fill="#e8e2d6" width="100%" height="100%"/><text x="20" y="78" font-size="22" fill="#8a7348" font-family="sans-serif">${s.id}</text></svg>`
-    );
-    img.onerror = () => {
-      img.onerror = null;
-      img.src = "data:image/svg+xml," + encodeURIComponent(
-        `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="140"><rect fill="#e8e2d6" width="100%" height="100%"/><text x="20" y="78" font-size="22" fill="#8a7348" font-family="sans-serif">${s.id}</text></svg>`
-      );
-    };
+    if (owned.length) {
+      img.src = SAMPLE_BASE + owned[0];
+      // 只在真的加载失败时才退回占位图，避免死链在控制台刷 404
+      img.onerror = () => { img.onerror = null; img.src = placeholder(s, "样例读取失败"); };
+    } else {
+      img.src = placeholder(s, "样例待补");
+    }
+
+    const variants = owned.length
+      ? owned.map((f) => VARIANT_ZH[f.replace(/^.*-/, "").replace(".jpg", "")] || f).join(" · ")
+      : "";
+
     const body = document.createElement("div");
     body.className = "body";
-    body.innerHTML = `<div class="meta">${s.id}</div><h3>${s.zh} · ${s.en}</h3><p>${s.use}</p>`;
+    body.innerHTML =
+      `<div class="meta">${s.id}</div>` +
+      `<h3>${s.zh} · ${s.en}</h3>` +
+      `<p>${s.use}</p>` +
+      (variants ? `<div class="samples">样例：${variants}</div>` : `<div class="samples muted">样例待补</div>`);
+
     el.appendChild(img);
     el.appendChild(body);
     grid.appendChild(el);
@@ -71,5 +99,9 @@ document.getElementById("filters").addEventListener("click", (e) => {
   btn.classList.add("active");
   render(btn.dataset.k || "all");
 });
+
+const ownedCount = Object.keys(SAMPLES).length;
+const stats = document.getElementById("stats");
+if (stats) stats.textContent = `样例 ${ownedCount} / ${STYLES.length} 风格`;
 
 render("all");
