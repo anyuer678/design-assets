@@ -15,8 +15,8 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\05-vaporwave-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\05-vaporwave-bg.jpg",
+    "hero": "hero/05-vaporwave-hero.jpg",
+    "background": "background/05-vaporwave-bg.jpg",
     "widgets": null
   },
   "complete": false

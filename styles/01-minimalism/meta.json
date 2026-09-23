@@ -15,8 +15,8 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\01-minimalism-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\01-minimalism-bg.jpg",
+    "hero": "hero/01-minimalism-hero.jpg",
+    "background": "background/01-minimalism-bg.jpg",
     "widgets": null
   },
   "complete": false

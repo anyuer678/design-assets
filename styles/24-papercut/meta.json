@@ -15,9 +15,9 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\24-papercut-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\24-papercut-bg.jpg",
-    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\24-papercut-widgets.jpg"
+    "hero": "hero/24-papercut-hero.jpg",
+    "background": "background/24-papercut-bg.jpg",
+    "widgets": "widgets/24-papercut-widgets.jpg"
   },
   "complete": true
 }

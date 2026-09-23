@@ -15,8 +15,8 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\11-terminal-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\11-terminal-bg.jpg",
+    "hero": "hero/11-terminal-hero.jpg",
+    "background": "background/11-terminal-bg.jpg",
     "widgets": null
   },
   "complete": false

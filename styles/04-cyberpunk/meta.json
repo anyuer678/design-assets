@@ -15,9 +15,9 @@
   ],
   "forbid": "Do not replace product UI themes in kb-ui/chatez/codedrill etc.",
   "files": {
-    "hero": "C:\\Users\\30816\\Desktop\\design-assets\\hero\\04-cyberpunk-hero.jpg",
-    "background": "C:\\Users\\30816\\Desktop\\design-assets\\background\\04-cyberpunk-bg.jpg",
-    "widgets": "C:\\Users\\30816\\Desktop\\design-assets\\widgets\\04-cyberpunk-widgets.jpg"
+    "hero": "hero/04-cyberpunk-hero.jpg",
+    "background": "background/04-cyberpunk-bg.jpg",
+    "widgets": "widgets/04-cyberpunk-widgets.jpg"
   },
   "complete": true
 }

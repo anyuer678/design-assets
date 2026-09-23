@@ -11,5 +11,5 @@
 ## 纪律
 
 - 产品 UI **禁止**被 design-assets 素材换皮
-- 文档/PPT/案例可引用 `samples/` 与风格索引
+- 文档/PPT/案例可引用 `docs/samples/` 与风格索引
 - 详见仓库根目录 [USAGE.md](../../USAGE.md)

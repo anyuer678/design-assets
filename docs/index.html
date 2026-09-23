@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>design-assets · 24 风格预览骨架</title>
+  <title>design-assets · 24 风格预览</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f6f3ec'/%3E%3Crect x='5' y='5' width='10' height='10' rx='2' fill='%232a2824'/%3E%3Crect x='17' y='5' width='10' height='10' rx='2' fill='%238a7348'/%3E%3Crect x='5' y='17' width='10' height='10' rx='2' fill='%238a7348'/%3E%3Crect x='17' y='17' width='10' height='10' rx='2' fill='%232a2824'/%3E%3C/svg%3E" />
   <style>
     :root { --ink:#2a2824; --muted:#6b6560; --line:#ddd5c8; --bg:#f6f3ec; --card:#fffdf8; --accent:#8a7348; }
     * { box-sizing: border-box; }
     body { margin:0; font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
     .wrap { width:min(1100px, calc(100% - 28px)); margin:0 auto; padding:28px 0 48px; }
     h1 { margin:0 0 8px; font-size:26px; }
-    .lead { color:var(--muted); margin:0 0 18px; max-width:70ch; }
+    .lead { color:var(--muted); margin:0 0 18px; max-width:74ch; }
     .warn { background:#f5ecd8; border:1px solid #c4a86a; color:#5a4a20; padding:10px 12px; border-radius:10px; margin:12px 0 18px; font-size:14px; }
-    .controls { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:16px; }
     .chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:6px 12px; cursor:pointer; font-size:13px; }
     .chip.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+    #stats { margin-left:auto; font-size:12px; color:var(--accent); }
     .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; }
     .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
     .card img { width:100%; height:140px; object-fit:cover; background:#e8e2d6; display:block; }
@@ -22,17 +24,19 @@
     .card h3 { margin:0 0 4px; font-size:14px; }
     .card p { margin:0; font-size:12px; color:var(--muted); min-height:3em; }
     .meta { font-size:11px; color:var(--accent); }
+    .samples { margin-top:6px; font-size:11px; color:#7c9a6a; }
+    .samples.muted { color:#b3aa9a; }
     footer { margin-top:28px; font-size:12px; color:var(--muted); }
     a { color:#3d5a80; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>design-assets · 风格预览骨架</h1>
+    <h1>design-assets · 24 风格预览</h1>
     <p class="lead">
-      公开仓提供 <strong>24 风格元数据 + 使用纪律 + 视觉圣经摘要</strong>。
-      大图全集不在 Git 对象库中，请使用 Release 附件或本机
-      <code>C:\...\Desktop\design-assets</code> 源目录。
+      公开仓提供 <strong>24 风格元数据 + 使用纪律 + 视觉圣经摘要</strong>，
+      并附 <strong>11 种风格</strong>的样例缩略图（<code>docs/samples/</code>）。
+      完整高清全集是本地素材，不随仓库发布。
     </p>
     <div class="warn">
       <strong>画风纪律（USAGE）：</strong>本库只服务文档 / PPT / 作品集案例，
@@ -44,14 +48,16 @@
       <button class="chip" data-k="culture">文化/水墨</button>
       <button class="chip" data-k="tech">科技/终端</button>
       <button class="chip" data-k="playful">游戏/桌宠</button>
+      <span id="stats"></span>
     </div>
     <div class="grid" id="grid"></div>
     <footer>
       License CC0 ·
-      <a href="./docs/visual-bible/">视觉圣经</a> ·
-      <a href="./USAGE.md">USAGE</a> ·
+      <a href="./visual-bible/">视觉圣经</a> ·
+      <a href="./preview/">静态索引</a> ·
+      <a href="https://github.com/anyuer678/design-assets/blob/main/USAGE.md">USAGE</a> ·
       <a href="https://github.com/anyuer678/design-assets">GitHub</a>
-      · 样例图来自 <code>samples/</code>（非全集）
+      · 样例图来自 <code>docs/samples/</code>（11/24 风格，非全集）
     </footer>
   </div>
   <script src="./preview.js"></script>
