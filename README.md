@@ -1,7 +1,7 @@
 # design-assets
 
 > AI 生成的设计素材库结构仓（24 风格元数据 + 使用纪律 + 产品视觉圣经摘要）  
-> **大图资产**不在本仓 Git 对象库中；仓库内放 24 种风格的样例缩略图（hero），完整高清全集是本地素材。
+> **大图资产**不在本仓 Git 对象库中；仓库内放 24 种风格的样例缩略图（hero），完整高清全集见 [Release v1.0](https://github.com/anyuer678/design-assets/releases/tag/v1.0)。
 
 [![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey)](LICENSE)
 [![status](https://img.shields.io/badge/status-preview-green)](#)
@@ -13,7 +13,7 @@
 | `styles/<id>/meta.json` | 24 种风格元数据（id、中英文名、源文件指引、用途/禁止） |
 | `docs/samples/` | 24 种风格的样例缩略图（hero；早期 11 风格另含背景/控件），Pages 预览站直接展示（非全集） |
 | `docs/index.html` + `docs/preview.js` | Pages 风格预览站：标签筛选 + 样例缩略图 |
-| `docs/visual-bible/` | 与产品绑定的视觉圣经摘要（chatez/codedrill/Word…） |
+| `docs/visual-bible/` | 与产品绑定的视觉圣经全文（chatez/codedrill/Word，自本地 docx 转换） |
 | `USAGE.md` | **画风纪律**：文档层可用，禁止替换产品 UI 主题 |
 | `scripts/build_meta.py` | 校验本地源目录中 hero/bg/widgets 是否存在 |
 | `LICENSE` / `NOTICE` | CC0（推荐）+ AI 生成声明 |
@@ -37,11 +37,11 @@ DESIGN_ASSETS_SRC=D:\assets\design-assets python scripts/build_meta.py  # 自定
 
 ## 未来
 
-- [ ] 视觉圣经 docx → Markdown 全文
+- [x] 视觉圣经 docx → Markdown 全文（chatez / codedrill / Word 三份见 `docs/visual-bible/`，2026-09）
 - [x] GitHub Pages 预览站（按风格筛选）docs/index.html + docs/preview.js
 - [x] 为剩余 13 种风格补样例缩略图（24 / 24，2026-09 AI 生成 hero 样例）
-- [ ] Release 上传压缩全集（2048×1152）
-- [x] CONTRIBUTING：新增风格的提示词与命名规范（基础版已含画风纪律）
+- [x] Release 上传压缩全集（2048×1152）→ [Release v1.0](https://github.com/anyuer678/design-assets/releases/tag/v1.0)（99 文件 / 61 MB，2026-09）
+- [x] CONTRIBUTING：新增风格的提示词模板与命名规范（编号/命名/分辨率/登记清单，2026-09）
 
 ## License
 
