@@ -1,0 +1,5 @@
+# 本仓是 AI 设计素材库（样例图片 + 文档 + 预览站）。
+# scripts/ 下仅两个维护用工具脚本（build_meta.py / check_portable_paths.py），
+# 不代表仓库技术栈，从 GitHub 语言统计中排除，避免卡片语言条误导。
+# 注：docs/（预览站）默认已被 linguist 视为文档目录排除。
+scripts/*.py linguist-detectable=false
